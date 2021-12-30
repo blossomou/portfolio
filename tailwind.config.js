@@ -4,6 +4,9 @@ module.exports = {
     "./components/**/*.tsx",
   ],
   theme: {
+    fontFamily: {
+      'Kaushan': ['Kaushan Script'],
+    },
     extend: {},
   },
   plugins: [],
