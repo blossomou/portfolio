@@ -8,7 +8,7 @@ class MyDocument extends Document {
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet" />
         </Head>
-        <body>
+        <body className="bg-gradient-to-r from-custom_green to-blue-400">
           <Main />
           <NextScript />
         </body>

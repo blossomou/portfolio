@@ -13,7 +13,7 @@ const Sidebar = () => {
       />
 
       <h3 className="my-4 text-3xl font-medium tracking-wider font-Kaushan">
-        <span>Won</span>
+        <span className="text-custom_green">Won</span>
         Young
       </h3>
 
@@ -48,8 +48,13 @@ const Sidebar = () => {
       </div>
 
       {/* EmailButton */}
-      <button className="w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-green-400 to-blue-400">Email Me</button>
-      <button className="w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-green-400 to-blue-400">Toggle Theme</button>
+      <button
+        className="w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-custom_green to-blue-400 focus:outline-none"
+        onClick={() => window.open("mailto: qingou@gmail.com")}
+      >
+        Email Me
+      </button>
+      <button className="w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-custom_green to-blue-400">Toggle Theme</button>
     </div>
   );
 };
