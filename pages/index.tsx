@@ -10,11 +10,14 @@ const index = () => {
       <h5 className="my-3 font-medium">
         I am currently pursuing B.Tech Degree(Final Year) in Computer Science Engineering from Academy of Technology. I have
       </h5>
-      <div className="flex-grow p-4 mt-5 bg-gray-400" style={{ marginLeft: '-1.5em', marginRight: '-1.5em' }}>
+      <div
+        className="flex-grow p-4 mt-5 bg-gray-400 dark:bg-dark-100"
+        style={{ marginLeft: '-1.5em', marginRight: '-1.5em' }}
+      >
         <h6 className="my-3 text-xl font-bold tracking-wide">What I offer</h6>
         <div className="grid gap-6 lg:grid-cols-2">
           {services.map((service: IService, index: Key) => (
-            <div className="bg-gray-200 rounded-lg lg:col-span-1" key={index}>
+            <div className="bg-gray-200 rounded-lg dark:bg-dark-200 lg:col-span-1" key={index}>
               <ServiceCard service={service} />
             </div>
           ))}
