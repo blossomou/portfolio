@@ -1,4 +1,5 @@
 import { useTheme } from 'next-themes';
+import Image from 'next/image';
 import { AiFillGithub, AiFillLinkedin, AiFillYoutube } from 'react-icons/ai';
 import { GiTie } from 'react-icons/gi';
 import { GoLocation } from 'react-icons/go';
@@ -13,10 +14,13 @@ const Sidebar = () => {
 
   return (
     <div>
-      <img
+      <Image
         src="http://watheydo.com/wp-content/uploads/2020/07/2-5-2922870304-1599011792141.jpg"
         alt="user avatar"
-        className="w-32 h-32 mx-auto rounded-full"
+        className="mx-auto rounded-full"
+        height="128px"
+        width="128px"
+        layout="intrinsic"
       />
 
       <h3 className="my-4 text-3xl font-medium tracking-wider font-Kaushan">
