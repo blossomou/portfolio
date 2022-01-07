@@ -1,12 +1,20 @@
+import { motion } from 'framer-motion';
 import { Key } from 'react';
 
+import { fadeInUp, routeAnimation, stagger } from '../animations';
 import ServiceCard from '../components/ServiceCard';
 import { services } from '../data';
 import { IService } from '../models/type';
 
 const index = () => {
   return (
-    <div className="flex flex-col flex-grow px-6 pt-1">
+    <motion.div
+      variants={routeAnimation}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      className="flex flex-col flex-grow px-6 pt-1"
+    >
       <h5 className="my-3 font-medium">
         I am currently pursuing B.Tech Degree(Final Year) in Computer Science Engineering from Academy of Technology. I have
       </h5>
@@ -15,15 +23,19 @@ const index = () => {
         style={{ marginLeft: '-1.5em', marginRight: '-1.5em' }}
       >
         <h6 className="my-3 text-xl font-bold tracking-wide">What I offer</h6>
-        <div className="grid gap-6 lg:grid-cols-2">
+        <motion.div className="grid gap-6 lg:grid-cols-2" variants={stagger} initial="initial" animate="animate">
           {services.map((service: IService, index: Key) => (
-            <div className="bg-gray-200 rounded-lg dark:bg-dark-200 lg:col-span-1" key={index}>
+            <motion.div
+              variants={fadeInUp}
+              className="bg-gray-200 rounded-lg dark:bg-dark-200 lg:col-span-1"
+              key={service.title}
+            >
               <ServiceCard service={service} />
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
