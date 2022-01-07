@@ -2,11 +2,13 @@ import { FunctionComponent } from 'react';
 
 import { Category } from '../models/type';
 
-export const NavItem: FunctionComponent<{ value: Category | 'all'; handlerFilterCategory: Function; active: string }> = ({
-  value,
-  handlerFilterCategory,
-  active,
-}) => {
+interface ProjectNavProps {
+  value?: Category | 'all';
+  handlerFilterCategory: Function;
+  active: string;
+}
+
+export const NavItem: FunctionComponent<ProjectNavProps> = ({ value, handlerFilterCategory, active }) => {
   let className = 'capitalize cursor-pointer hover:text-custom_green';
   if (active === value) {
     className += ' text-custom_green';
@@ -18,7 +20,7 @@ export const NavItem: FunctionComponent<{ value: Category | 'all'; handlerFilter
   );
 };
 
-const ProjectsNavbar: FunctionComponent<{ handlerFilterCategory: Function; active: string }> = (props) => {
+const ProjectsNavbar: FunctionComponent<ProjectNavProps> = (props) => {
   return (
     <div className="flex px-3 py-2 space-x-3 overflow-x-auto list-none">
       <NavItem value="all" {...props} />
