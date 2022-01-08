@@ -16,7 +16,8 @@ const index = () => {
       className="flex flex-col flex-grow px-6 pt-1"
     >
       <h5 className="my-3 font-medium">
-        I am currently pursuing B.Tech Degree(Final Year) in Computer Science Engineering from Academy of Technology. I have
+        I graduated from Cleveland State University with a Bachelors in Information System (IS). I am currently employeed at
+        Embrace Pet Insurance.
       </h5>
       <div
         className="flex-grow p-4 mt-5 bg-gray-400 dark:bg-dark-100"

@@ -1,6 +1,6 @@
 import { useTheme } from 'next-themes';
 import Image from 'next/image';
-import { AiFillGithub, AiFillLinkedin, AiFillYoutube } from 'react-icons/ai';
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { GiTie } from 'react-icons/gi';
 import { GoLocation } from 'react-icons/go';
 
@@ -15,7 +15,7 @@ const Sidebar = () => {
   return (
     <div>
       <Image
-        src="http://watheydo.com/wp-content/uploads/2020/07/2-5-2922870304-1599011792141.jpg"
+        src="/assets/QingAndMomo.jpg"
         alt="user avatar"
         className="mx-auto rounded-full"
         height="128px"
@@ -24,11 +24,11 @@ const Sidebar = () => {
       />
 
       <h3 className="my-4 text-3xl font-medium tracking-wider font-Kaushan">
-        <span className="text-custom_green">Won</span>
-        Young
+        <span className="text-custom_green">Qing</span>
+        Ou
       </h3>
 
-      <p className="px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200">Web Developer</p>
+      <p className="px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200">Full Stack Developer</p>
       <a
         className="flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200"
         href="/assets/QingOuResume.pdf"
@@ -38,34 +38,28 @@ const Sidebar = () => {
         Download Resume
       </a>
       {/* social icons */}
-      <div className="flex justify-around w-9/12 mx-auto my-5 text-green-500 md:w-full ">
-        <a href="">
-          <AiFillYoutube className="w-8 h-8 cursor-pointer" />
-        </a>
-        <a href="">
+      <div className="flex justify-around w-9/12 mx-auto my-5 text-green-500">
+        <a href="https://github.com/blossomou">
           <AiFillGithub className="w-8 h-8 cursor-pointer" />
         </a>
-        <a href="">
+        <a href="https://www.linkedin.com/in/qingou/">
           <AiFillLinkedin className="w-8 h-8 cursor-pointer" />
         </a>
       </div>
-      {/* address */}
-
-      {/* phone number */}
 
       <div className="py-4 my-5 bg-gray-200 dark:bg-dark-200" style={{ marginLeft: '-1rem ', marginRight: '-1rem' }}>
         <div className="flex items-center justify-center space-x-2">
           <GoLocation />
           <span>Ohio, United States</span>
         </div>
-        <p className="my-2">makeartforfun@gmail.com</p>
-        <p className="my-2">4402323088</p>
+        <p className="my-2">qingqingou@gmail.com</p>
+        <p className="my-2"></p>
       </div>
 
       {/* EmailButton */}
       <button
         className="w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-custom_green to-blue-400 focus:outline-none"
-        onClick={() => window.open('mailto: qingou@gmail.com')}
+        onClick={() => window.open('mailto: qingqingou@gmail.com')}
       >
         Email Me
       </button>
