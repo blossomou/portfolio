@@ -20,6 +20,9 @@ module.exports = {
         primarybgcolor: {
           DEFAULT: '#f7c7db', // orchard pink
         },
+        textbgcolor: {
+          DEFAULT: '#F3E2F3', //pale purple pantone
+        },
         secondarycolor: {
           DEFAULT: '#92D1C3', // Middle blue Green
         },

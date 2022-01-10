@@ -28,17 +28,17 @@ const Sidebar = () => {
         Ou
       </h3>
 
-      <p className="px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200">Full Stack Developer</p>
+      <p className="px-2 py-1 my-3 rounded-full bg-textbgcolor dark:bg-dark-200">Full Stack Developer</p>
       <a
-        className="flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200"
+        className="flex items-center justify-center px-2 py-1 my-3 rounded-full bg-textbgcolor dark:bg-dark-200"
         href="/assets/QingOuResume.pdf"
         download="QingOuResume.pdf"
       >
-        <GiTie className="w-6 h-6" />
+        <GiTie className="w-6 h-6 text-primarycolor" />
         Download Resume
       </a>
       {/* social icons */}
-      <div className="flex justify-around w-9/12 mx-auto my-5 text-green-500">
+      <div className="flex justify-around w-9/12 mx-auto my-5 text-primarycolor">
         <a href="https://github.com/blossomou">
           <AiFillGithub className="w-8 h-8 cursor-pointer" />
         </a>
@@ -47,9 +47,9 @@ const Sidebar = () => {
         </a>
       </div>
 
-      <div className="py-4 my-5 bg-gray-200 dark:bg-dark-200" style={{ marginLeft: '-1rem ', marginRight: '-1rem' }}>
+      <div className="py-4 my-5 bg-textbgcolor dark:bg-dark-200" style={{ marginLeft: '-1rem ', marginRight: '-1rem' }}>
         <div className="flex items-center justify-center space-x-2">
-          <GoLocation />
+          <GoLocation className="text-primarycolor" />
           <span>Ohio, United States</span>
         </div>
         <p className="my-2">qingqingou@gmail.com</p>

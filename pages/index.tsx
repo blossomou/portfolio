@@ -19,16 +19,13 @@ const index = () => {
         I graduated from Cleveland State University with a Bachelors in Information System (IS). I am currently employeed at
         Embrace Pet Insurance.
       </h5>
-      <div
-        className="flex-grow p-4 mt-5 bg-gray-400 dark:bg-dark-100"
-        style={{ marginLeft: '-1.5em', marginRight: '-1.5em' }}
-      >
+      <div className="flex-grow p-4 mt-5 dark:bg-dark-100" style={{ marginLeft: '-1.5em', marginRight: '-1.5em' }}>
         <h6 className="my-3 text-xl font-bold tracking-wide">What I offer</h6>
         <motion.div className="grid gap-6 lg:grid-cols-2" variants={stagger} initial="initial" animate="animate">
           {services.map((service: IService, index: Key) => (
             <motion.div
               variants={fadeInUp}
-              className="bg-gray-200 rounded-lg dark:bg-dark-200 lg:col-span-1"
+              className="rounded-lg bg-textbgcolor dark:bg-dark-200 lg:col-span-1"
               key={service.title}
             >
               <ServiceCard service={service} />

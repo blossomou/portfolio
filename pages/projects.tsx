@@ -39,7 +39,7 @@ const Projects = () => {
           <motion.div
             variants={fadeInUp}
             key={project.name}
-            className="col-span-12 p-2 bg-gray-200 rounded-lg sm:col-span-6 lg:col-span-4 dark:bg-dark-200"
+            className="col-span-12 p-2 rounded-lg bg-textbgcolor sm:col-span-6 lg:col-span-4 dark:bg-dark-200"
           >
             <ProjectCard project={project} showDetail={showDetail} setShowDetail={setShowDetail} />
           </motion.div>
