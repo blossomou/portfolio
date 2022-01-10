@@ -24,7 +24,7 @@ const Sidebar = () => {
       />
 
       <h3 className="my-4 text-3xl font-medium tracking-wider font-Kaushan">
-        <span className="text-custom_green">Qing</span>
+        <span className="text-primarycolor">Qing</span>
         Ou
       </h3>
 
@@ -58,14 +58,14 @@ const Sidebar = () => {
 
       {/* EmailButton */}
       <button
-        className="w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-custom_green to-blue-400 focus:outline-none"
+        className="w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-primarycolor to-secondarycolor focus:outline-none"
         onClick={() => window.open('mailto: qingqingou@gmail.com')}
       >
         Email Me
       </button>
       <button
         onClick={changeTheme}
-        className="w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-custom_green to-blue-400"
+        className="w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-primarycolor to-secondarycolor"
       >
         Toggle Theme
       </button>

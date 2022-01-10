@@ -9,9 +9,9 @@ interface ProjectNavProps {
 }
 
 export const NavItem: FunctionComponent<ProjectNavProps> = ({ value, handlerFilterCategory, active }) => {
-  let className = 'capitalize cursor-pointer hover:text-custom_green';
+  let className = 'capitalize cursor-pointer hover:text-primarycolor';
   if (active === value) {
-    className += ' text-custom_green';
+    className += ' text-primarycolor';
   }
   return (
     <li className={className} onClick={() => handlerFilterCategory(value)}>
