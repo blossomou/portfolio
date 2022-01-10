@@ -12,17 +12,20 @@ const Resume = () => {
         <motion.div variants={fadeInUp} initial="initial" animate="animate">
           <h5 className="my-3 text-2xl font-bold">Education</h5>
           <div>
-            <h5 className="my-2 text-xl font-bold">Computer Science Engineering</h5>
-            <p className="font-semibold">Academy of Technology (2017-2021)</p>
-            <p className="my-3">I am currently pursuing B.tech in Computer Science Engineering from Academy of Technology</p>
+            <h5 className="my-2 text-xl font-bold">Cleveland State University</h5>
+            <p className="font-semibold">Information System (IS) (2007 - 2011)</p>
+            <h5 className="my-2 text-xl font-bold">Bedford High School</h5>
+            <p className="font-semibold">High school courses (2004 - 2007)</p>
           </div>
         </motion.div>
         <motion.div variants={fadeInUp} initial="initial" animate="animate">
           <h5 className="my-3 text-2xl font-bold">Experience</h5>
           <div>
             <h5 className="my-2 text-xl font-bold">Software developer</h5>
-            <p className="font-semibold">TCS (2021 - Present)</p>
-            <p className="my-3">I dont know why i am doing this job</p>
+            <p className="font-semibold">Medical Mutual of Ohio (2013 - 2017)</p>
+            <p className="font-semibold">Univeristy Hospital (2017 - 2021)</p>
+            <p className="font-semibold">Embrace Pet Insurance (2021 - Present)</p>
+            <p className="my-3">I like problem solvings because it makes my brain think!</p>
           </div>
         </motion.div>
       </div>

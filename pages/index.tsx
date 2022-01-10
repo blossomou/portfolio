@@ -16,8 +16,10 @@ const index = () => {
       className="flex flex-col flex-grow px-6 pt-1"
     >
       <h5 className="my-3 font-medium">
-        I graduated from Cleveland State University with a Bachelors in Information System (IS). I am currently employeed at
-        Embrace Pet Insurance.
+        I graduated from Cleveland State University with a Bachelors in Information System (IS) and a minor in Mathematics. I
+        am currently employeed at Embrace Pet Insurance. On my free time, I like to take walks with Momo, exercise, do coding
+        tutorials, practice piano and hang out with my friends. I like to watch japanese anime. I also listen to k-pop music
+        when I am coding.
       </h5>
       <div className="flex-grow p-4 mt-5 dark:bg-dark-100" style={{ marginLeft: '-1.5em', marginRight: '-1.5em' }}>
         <h6 className="my-3 text-xl font-bold tracking-wide">What I offer</h6>
