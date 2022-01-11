@@ -48,52 +48,53 @@ export const services: IService[] = [
 export const languages: ISkill[] = [
   {
     Icon: BsCircleFill,
-    name: 'C#',
+    name: 'C# & .NET',
     level: '75%',
   },
   {
     Icon: BsCircleFill,
-    name: 'JavaScript',
+    name: 'JavaScript & TypeScript',
     level: '70%',
   },
   {
     Icon: BsCircleFill,
-    name: 'React Native',
-    level: '70%',
-  },
-  {
-    Icon: BsCircleFill,
-    name: 'React',
+    name: 'React & React Native',
     level: '70%',
   },
 
   {
     Icon: BsCircleFill,
-    name: 'Tailwind CSS',
+    name: 'CSS & Tailwind CSS',
     level: '50%',
-  },
-  {
-    Icon: BsCircleFill,
-    name: 'TypeScript',
-    level: '65%',
   },
 ];
 
 export const tools: ISkill[] = [
   {
     Icon: BsCircleFill,
-    name: 'SQL',
+    name: 'Agile Development Methodology',
+    level: '75%',
+  },
+  {
+    Icon: BsCircleFill,
+    name: 'Microsoft SQL',
     level: '70%',
   },
 
   {
     Icon: BsCircleFill,
-    name: 'Visual Studio',
+    name: 'Visual Studio & VS Code',
+    level: '75%',
+  },
+
+  {
+    Icon: BsCircleFill,
+    name: 'Mac OS & Windows',
     level: '75%',
   },
   {
     Icon: BsCircleFill,
-    name: 'Visual Studio Code',
+    name: 'iOS & Android',
     level: '75%',
   },
 ];
