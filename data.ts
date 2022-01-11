@@ -10,22 +10,23 @@ export const services: IService[] = [
   {
     Icon: RiComputerLine,
     title: 'Frontend Development',
-    about: 'I can build websites using <b> HTML</b>, <b>CSS,</b> and <b>React.js</b> ',
+    about:
+      'I can build websites using <b> HTML</b>, <b>CSS,</b> <b>Tailwind CSS</b>, <b>React.js</b> and <b>Typescript</b>. Also familiar frameworks such as <b>Next.js</b> and <b>Angular</> ',
   },
   {
     Icon: FaMobileAlt,
     title: 'Mobile Development',
-    about: 'iOS and Android apps using <b> React Native with Expo</b>, <b>Tailwind CSS</b> and <b>Typescript</b> ',
+    about: 'iOS and Android apps using <b> React Native with Expo</b>, and <b>Typescript</b> ',
   },
   {
     Icon: FaServer,
-    title: 'Backend  Development',
-    about: 'Design database using <b>entity framework</b>, api using <b>C# </b> & other popular frameworks',
+    title: 'Database  Development',
+    about: 'Design database structures and write SQL queries',
   },
   {
     Icon: AiOutlineApi,
-    title: 'API Development',
-    about: 'I can develop REST API using <b>C#</b> & <b>Node.js</b> ',
+    title: 'Backend Development',
+    about: 'I can develop REST API using <b>C#</b> & <b>Node.js</b> using various frameworks ',
   },
   {
     Icon: MdDeveloperMode,
@@ -101,7 +102,7 @@ export const projects: IProject[] = [
   {
     id: 1,
     name: 'Weather Dashboard',
-    description: 'A simple weather app that retrieves temperature any city',
+    description: 'A simple weather app that retrieves temperature from any city using OpenWeather API',
     image_path: '/images/weatherdashboard.png',
     deployed_url: 'https://blossomou.github.io/WeatherDashboard/',
     github_url: 'https://github.com/blossomou/WeatherDashboard',
@@ -114,9 +115,9 @@ export const projects: IProject[] = [
     image_path: '/images/tictactoe.png',
     deployed_url: '',
     github_url: 'https://github.com/blossomou/TicTacToe',
-    category: ['typescript', 'react'],
-    description: 'A simple mobile game with two difficulty levels',
-    key_techs: ['React Native', 'TypeScript'],
+    category: ['typescript', 'react', 'react native'],
+    description: 'A simple mobile game where you can with another person or two difficulty levels',
+    key_techs: ['React Native', 'React', 'TypeScript'],
   },
 
   // {

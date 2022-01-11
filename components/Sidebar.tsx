@@ -4,6 +4,8 @@ import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { GiTie } from 'react-icons/gi';
 import { GoLocation } from 'react-icons/go';
 
+import ThemeToggle from './ThemeToggle';
+
 /* eslint-disable @next/next/no-img-element */
 const Sidebar = () => {
   const { theme, setTheme } = useTheme();
@@ -15,7 +17,7 @@ const Sidebar = () => {
   return (
     <div>
       <Image
-        src="/assets/QingAndMomo.jpg"
+        src="/images/QingAndMomo.jpg"
         alt="user avatar"
         className="mx-auto rounded-full"
         height="128px"
@@ -63,12 +65,10 @@ const Sidebar = () => {
       >
         Email Me
       </button>
-      <button
-        onClick={changeTheme}
-        className="w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-primarycolor to-secondarycolor"
-      >
-        Toggle Theme
-      </button>
+
+      <div className="flex justify-center w-full px-5 py-2 my-2">
+        <ThemeToggle />
+      </div>
     </div>
   );
 };
