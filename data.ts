@@ -15,22 +15,22 @@ export const services: IService[] = [
   {
     Icon: FaMobileAlt,
     title: 'Mobile Development',
-    about: 'I can build mobile using <b> React Native with Expo</b>, <b>Tailwind CSS</b> and <b>Typescript</b> ',
+    about: 'iOS and Android apps using <b> React Native with Expo</b>, <b>Tailwind CSS</b> and <b>Typescript</b> ',
   },
   {
     Icon: FaServer,
     title: 'Backend  Development',
-    about: 'handle database, server, api using <b>Express </b> & other popular frameworks',
+    about: 'Design database using <b>entity framework</b>, api using <b>C# </b> & other popular frameworks',
   },
   {
     Icon: AiOutlineApi,
     title: 'API Development',
-    about: 'I can develop REST API using <b>C#</b> & <b>Node APIS</b> ',
+    about: 'I can develop REST API using <b>C#</b> & <b>Node.js</b> ',
   },
   {
     Icon: MdDeveloperMode,
-    title: 'Competitive Coder',
-    about: 'a problem solver in <b>Codewars</b> and <b>Edabit</b> ',
+    title: 'Interactive Challenges',
+    about: 'A problem solver in <b>Codewars</b> and <b>Edabit</b> ',
   },
   // {
   //   Icon: AiOutlineAntDesign,
