@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 import { FunctionComponent, useState } from 'react';
 import { AiFillGithub, AiFillProject } from 'react-icons/ai';
 import { MdClose } from 'react-icons/md';
@@ -40,7 +39,7 @@ const ProjectCard: FunctionComponent<{
         >
           <div>
             <motion.div variants={fadeInUp} className="border-4 border-primarycolor">
-              <Image src={image_path} alt={name} width="300" height="150" layout="responsive" />
+              <img src={image_path} alt={name} width="300" height="150"/>
             </motion.div>
 
             {/* <img src={image_path} alt={name} /> */}

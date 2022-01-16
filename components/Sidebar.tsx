@@ -1,5 +1,4 @@
 import { useTheme } from 'next-themes';
-// import Image from 'next/image';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { GiTie } from 'react-icons/gi';
 import { GoLocation } from 'react-icons/go';
@@ -22,7 +21,6 @@ const Sidebar = () => {
         className="mx-auto rounded-full"
         height="128px"
         width="128px"
-        // layout="intrinsic"
       />
 
       <h3 className="my-4 text-3xl font-medium tracking-wider font-Kaushan">
