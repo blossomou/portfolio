@@ -1,6 +1,5 @@
 {
   "canisters": {
-    
     "portfolio": {
       "frontend": {
         "entrypoint": "out/index.html"
