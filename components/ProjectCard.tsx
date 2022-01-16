@@ -19,14 +19,14 @@ const ProjectCard: FunctionComponent<{
 }) => {
   return (
     <div>
-      <Image
+      <img
         src={image_path}
         alt={name}
         className="cursor-pointer"
         onClick={() => setShowDetail(id)}
         width="300"
         height="150"
-        layout="responsive"
+        // layout="responsive"
       />
 
       {/* <img src={image_path} alt={name} className="cursor-pointer" onClick={() => setShowDetail(true)} /> */}
