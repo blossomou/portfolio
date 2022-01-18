@@ -11,7 +11,7 @@ export const services: IService[] = [
     Icon: RiComputerLine,
     title: 'Frontend Development',
     about:
-      'I can build websites using <b> HTML</b>, <b>CSS,</b> <b>Tailwind CSS</b>, <b>React.js</b> and <b>Typescript</b>. Also familiar frameworks such as <b>Next.js</b> and <b>Angular</> ',
+      'I can build websites using <b> HTML</b>, <b>CSS,</b> <b>Tailwind CSS</b>, <b>React.js</b> and <b>Typescript</b>.',
   },
   {
     Icon: FaMobileAlt,
@@ -21,7 +21,7 @@ export const services: IService[] = [
   {
     Icon: FaServer,
     title: 'Database  Development',
-    about: 'Design database structures and write SQL queries',
+    about: 'Design database structures, write SQL queries and store procedures.',
   },
   {
     Icon: AiOutlineApi,
@@ -117,20 +117,20 @@ export const projects: IProject[] = [
     deployed_url: '',
     github_url: 'https://github.com/blossomou/TicTacToe',
     category: ['typescript', 'react', 'react native'],
-    description: 'A simple mobile game where you can with another person or two difficulty levels',
+    description: 'A mobile game for iOS and Android where you can play with another person or with bots',
     key_techs: ['React Native', 'React', 'TypeScript'],
   },
 
-  // {
-  //   id: 3,
-  //   name: 'Tic-Tac-Toe',
-  //   image_path: '/images/dev.jpg',
-  //   deployed_url: '',
-  //   github_url: 'https://github.com/blossomou/TicTacToe',
-  //   category: ['typescript', 'react'],
-  //   description: 'A simple Tic-tac-toe mobile app',
-  //   key_techs: ['React Native', 'TypeScript'],
-  // },
+  {
+    id: 3,
+    name: 'FlappyBird Clone',
+    image_path: '/images/flappybird.png',
+    deployed_url: '',
+    github_url: 'https://github.com/blossomou/FlappyBirdClone',
+    category: ['typescript', 'react', 'react native'],
+    description: 'Flappy bird clone for iOS and Android',
+    key_techs: ['React Native', 'TypeScript'],
+  },
 
   // {
   //   id: 4,

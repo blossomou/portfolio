@@ -24,4 +24,4 @@ export interface IProject {
 }
 
 // export type Category = 'react' | 'node' | 'express' | 'mongo' | 'javascript' | 'typescript';
-export type Category = 'react' | 'node' | 'javascript' | 'typescript' | 'react native';
+export type Category = 'react' | 'javascript' | 'typescript' | 'react native';

@@ -17,9 +17,10 @@ const index = () => {
     >
       <h5 className="my-3 font-medium">
         I graduated from Cleveland State University with a Bachelors in Information System (IS) and a minor in Mathematics. I
-        am currently employeed at Embrace Pet Insurance and a TA in Trilogy Education Services. In my free time, I like to
-        take walks with my dog Momo, exercise, do coding tutorials, practice piano, watch japanese anime and hang out with my
-        friends. While I am busy coding away, I enjoy listening to k-pop music.
+        am currently employeed at Embrace Pet Insurance and a Full Stack Web Development TA (Part-Time) at Butler University
+        for Trilogy Education Services. In my free time, I like to take walks with my dog Momo, exercise, do coding
+        tutorials, practice piano, watch japanese anime and hang out with my friends. While I am busy coding away, I enjoy
+        listening to k-pop music.
       </h5>
       <div className="flex-grow p-4 mt-5 dark:bg-dark-100" style={{ marginLeft: '-1.5em', marginRight: '-1.5em' }}>
         <h6 className="my-3 text-xl font-bold tracking-wide">What I do</h6>
