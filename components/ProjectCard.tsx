@@ -38,7 +38,7 @@ const ProjectCard: FunctionComponent<{
           animate="animate"
         >
           <div>
-            <motion.div variants={fadeInUp} className="border-4 border-primarycolor">
+            <motion.div variants={fadeInUp} className="border-4 border-primarycolor flex justify-center">
               <img src={image_path} alt={name} width="300" height="150"/>
             </motion.div>
 
