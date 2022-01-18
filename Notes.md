@@ -6,8 +6,20 @@
 
 ## stop replica
 `dfx stop`
-## script to deploy
+## script to deploy locally
 - `dfx deploy portfolio` -it is dfx.json
+
+## script to deploy to mainnet (ic)
+
+build
+```sh
+dfx build portfolio
+```
+
+deploy
+```sh
+dfx canister --network ic --no-wallet install --mode=reinstall portfolio
+```
 
 ## Sample URL
 http://localhost:8000/?canisterId=rrkah-fqaaa-aaaaa-aaaaq-cai

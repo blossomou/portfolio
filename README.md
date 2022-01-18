@@ -9,6 +9,10 @@ I want to learn more about React, Nextjs, Tailwind css and Typescript. I added a
 * Typescript
 * Tailwind css
 
+## Website
+https://gsnml-5aaaa-aaaai-qbjfa-cai.raw.ic0.app/
+
+
 My notes for [internet computer deployment](./Notes.md)
 ## Youtube Tutorial
 https://www.youtube.com/watch?v=atebfXxl9B4&list=LL&index=1
