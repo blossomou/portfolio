@@ -2,7 +2,10 @@
 - `npm run build` 
 
 ## start replica
-`dfx start --background`
+`dfx start --background --clean`
+
+## stop replica
+`dfx stop`
 ## script to deploy
 - `dfx deploy portfolio` -it is dfx.json
 
