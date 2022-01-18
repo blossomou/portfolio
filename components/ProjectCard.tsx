@@ -51,8 +51,8 @@ const ProjectCard: FunctionComponent<{
                 rel="noopener noreferrer"
                 className="flex items-center px-4 py-2 space-x-3 text-lg  bg-[#F9F0F9] dark:bg-dark-200"
               >
-                <AiFillGithub />
-                <span>Github</span>
+                <AiFillGithub className="dark:text-white"/>
+                <span className="dark:text-white">Github</span>
               </a>
               <a
                 href={deployed_url}
@@ -60,8 +60,8 @@ const ProjectCard: FunctionComponent<{
                 rel="noopener noreferrer"
                 className="flex items-center px-4 py-2 space-x-3 text-lg  bg-[#F9F0F9] dark:bg-dark-200"
               >
-                <AiFillProject />
-                <span>Project</span>
+                <AiFillProject className="dark:text-white"/>
+                <span className="dark:text-white">Project</span>
               </a>
             </motion.div>
           </div>
