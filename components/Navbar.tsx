@@ -14,7 +14,7 @@ const NavItem: FunctionComponent<NavProps> = ({ activeItem, setActiveItem, route
     <Link href={route}>
       <a>
         <span
-          className="hover:text-custom_green"
+          className="hover:text-primarycolor"
           onClick={() => {
             setActiveItem(name);
           }}
@@ -34,11 +34,11 @@ const Navbar = () => {
     if (pathname === '/') setActiveItem('About');
     if (pathname === '/projects') setActiveItem('Projects');
     if (pathname === '/resume') setActiveItem('Resume');
-  }, []);
+  }, [pathname]);
 
   return (
     <div className="flex justify-between px-5 py-3 my-3">
-      <span className="text-xl font-bold border-b-4 text-custom_green border-custom_green md:text-2xl">{activeItem} </span>
+      <span className="text-xl font-bold border-b-4 text-primarycolor border-primarycolor md:text-2xl">{activeItem} </span>
       <div className="flex space-x-5 text-lg">
         <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name="About" route="/" />
         <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name="Projects" route="/projects" />

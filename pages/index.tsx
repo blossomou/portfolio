@@ -16,19 +16,19 @@ const index = () => {
       className="flex flex-col flex-grow px-6 pt-1"
     >
       <h5 className="my-3 font-medium">
-        I graduated from Cleveland State University with a Bachelors in Information System (IS). I am currently employeed at
-        Embrace Pet Insurance.
+        I graduated from Cleveland State University with a Bachelors in Information System (IS) and a minor in Mathematics. I
+        am currently employeed at Embrace Pet Insurance and a Full Stack Web Development TA (Part-Time) at Butler University
+        for Trilogy Education Services. In my free time, I like to take walks with my dog Momo, exercise, do coding
+        tutorials, practice piano, watch japanese anime and hang out with my friends. While I am busy coding away, I enjoy
+        listening to k-pop music.
       </h5>
-      <div
-        className="flex-grow p-4 mt-5 bg-gray-400 dark:bg-dark-100"
-        style={{ marginLeft: '-1.5em', marginRight: '-1.5em' }}
-      >
-        <h6 className="my-3 text-xl font-bold tracking-wide">What I offer</h6>
+      <div className="flex-grow p-4 mt-5 dark:bg-dark-100" style={{ marginLeft: '-1.5em', marginRight: '-1.5em' }}>
+        <h6 className="my-3 text-xl font-bold tracking-wide">What I do</h6>
         <motion.div className="grid gap-6 lg:grid-cols-2" variants={stagger} initial="initial" animate="animate">
           {services.map((service: IService, index: Key) => (
             <motion.div
               variants={fadeInUp}
-              className="bg-gray-200 rounded-lg dark:bg-dark-200 lg:col-span-1"
+              className="rounded-lg bg-textbgcolor dark:bg-dark-200 lg:col-span-1"
               key={service.title}
             >
               <ServiceCard service={service} />

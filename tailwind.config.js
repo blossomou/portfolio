@@ -14,6 +14,19 @@ module.exports = {
         custom_green: {
           DEFAULT: '#00f260',
         },
+        primarycolor: {
+          DEFAULT: '#DA95D3', // Plum web
+        },
+        primarybgcolor: {
+          DEFAULT: '#f7c7db', // orchard pink
+        },
+        textbgcolor: {
+          DEFAULT: '#F3E2F3', //pale purple pantone
+        },
+        secondarycolor: {
+          DEFAULT: '#92D1C3', // Middle blue Green
+        },
+
         dark: {
           DEFAULT: '#010101',
           100: '#0a0b0e',
