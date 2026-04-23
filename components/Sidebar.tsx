@@ -2,6 +2,7 @@ import { useTheme } from 'next-themes';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { GiTie } from 'react-icons/gi';
 import { GoLocation } from 'react-icons/go';
+import {isGithubPages} from '../constants'
 
 import ThemeToggle from './ThemeToggle';
 
@@ -13,8 +14,6 @@ const Sidebar = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');
   };
 
-  // GH Pages: relative paths (resolved by <base href="/portfolio/">). All other envs: absolute paths.
-  const isGithubPages = process.env.GITHUB_PAGES_DEPLOY === 'true';
   const imgSrc = isGithubPages ? 'images/QingAndMomo.jpg' : '/images/QingAndMomo.jpg';
   const pdfHref = isGithubPages ? 'assets/QingOuResume.pdf' : '/assets/QingOuResume.pdf';
 
