@@ -2,30 +2,26 @@ import { useTheme } from 'next-themes';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { GiTie } from 'react-icons/gi';
 import { GoLocation } from 'react-icons/go';
-import { useRouter } from 'next/router';
 
 import ThemeToggle from './ThemeToggle';
 
 /* eslint-disable @next/next/no-img-element */
 const Sidebar = () => {
   const { theme, setTheme } = useTheme();
-  const router = useRouter();
 
   const changeTheme = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');
   };
 
-  // Compute relative path to public assets based on route depth
-  const assetPath = (name: string) => {
-    const segments = router.pathname.split('/').filter(Boolean);
-    const up = segments.length > 0 ? '../'.repeat(segments.length) : '';
-    return `${up}${name}`;
-  };
+  // GH Pages: relative paths (resolved by <base href="/portfolio/">). All other envs: absolute paths.
+  const isGithubPages = process.env.GITHUB_PAGES_DEPLOY === 'true';
+  const imgSrc = isGithubPages ? 'images/QingAndMomo.jpg' : '/images/QingAndMomo.jpg';
+  const pdfHref = isGithubPages ? 'assets/QingOuResume.pdf' : '/assets/QingOuResume.pdf';
 
   return (
     <div>
       <img
-        src={assetPath('images/QingAndMomo.jpg')}
+        src={imgSrc}
         alt="user avatar"
         className="mx-auto rounded-full"
         height="128px"
@@ -40,7 +36,7 @@ const Sidebar = () => {
       <p className="px-2 py-1 my-3 rounded-full bg-textbgcolor dark:bg-dark-200">Full Stack Developer</p>
       <a
         className="flex items-center justify-center px-2 py-1 my-3 rounded-full bg-textbgcolor dark:bg-dark-200"
-        href={assetPath('assets/QingOuResume.pdf')}
+        href={pdfHref}
         download="QingOuResume.pdf"
       >
         <GiTie className="w-6 h-6 text-primarycolor" />
