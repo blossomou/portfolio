@@ -17,8 +17,7 @@ const index = () => {
     >
       <h5 className="my-3 font-medium">
         I graduated from Cleveland State University with a Bachelors in Information System (IS) and a minor in Mathematics. I
-        am currently employeed at Embrace Pet Insurance and a Full Stack Web Development TA (Part-Time) at Butler University
-        for Trilogy Education Services. In my free time, I like to take walks with my dog Momo, exercise, do coding
+        am currently employed at Embrace Pet Insurance. In my free time, I like to take walks with my dog Momo, exercise, do coding
         tutorials, practice piano, watch japanese anime and hang out with my friends. While I am busy coding away, I enjoy
         listening to k-pop music.
       </h5>
