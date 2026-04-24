@@ -38,3 +38,7 @@ yarn-error.log*
 
 #omo
 .sisyphus/
+
+.playwright-mcp/
+
+test-results/

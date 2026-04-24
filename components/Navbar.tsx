@@ -12,7 +12,6 @@ interface NavProps {
 const NavItem: FunctionComponent<NavProps> = ({ activeItem, setActiveItem, route, name }) => {
   return activeItem !== name ? (
     <Link href={route}>
-      <a>
         <span
           className="hover:text-primarycolor"
           onClick={() => {
@@ -21,7 +20,6 @@ const NavItem: FunctionComponent<NavProps> = ({ activeItem, setActiveItem, route
         >
           {name}
         </span>
-      </a>
     </Link>
   ) : null;
 };
