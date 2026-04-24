@@ -1,12 +1,36 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-/* //TODO use tailwind */
+@variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primarycolor: #DA95D3;
+  --color-primarybgcolor: #f7c7db;
+  --color-textbgcolor: #F3E2F3;
+  --color-secondarycolor: #92D1C3;
+  --color-dark-100: #0a0b0e;
+  --color-dark-200: #16181d;
+  --color-dark-300: #16181d;
+  --color-dark-500: #0f1115;
+  --color-dark-700: #202125;
+}
+
+.shadow-custom-light {
+  box-shadow: 0 0 10px #313131;
+}
+
+.dark .shadow-custom-light,
+.dark .shadow-custom-dark {
+  box-shadow: 5px 5px 10px #0a0c0e, -5px -5px 10px #14161c !important;
+}
+
 body {
   background-color: black;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: #354358;
+}
+
+.dark body {
+  color: white;
 }
 
 ::-webkit-scrollbar-thumb {

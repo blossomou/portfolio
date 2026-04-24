@@ -31,15 +31,24 @@ const Moon = () => {
 
 const ThemeToggle = () => {
   const { theme, setTheme } = useTheme();
-
-  const [activeTheme, setActiveTheme] = useState<string | null>(null);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    if (activeTheme === null) {
-      setActiveTheme(Theme.LIGHT);
-    }
-    return setTheme(activeTheme);
-  }, [activeTheme, setActiveTheme, setTheme]);
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return (
+      <div className="flex items-center justify-between px-2 py-1 border border-solid cursor-pointer border-primarycolor rounded-xl">
+        <div className="opacity-100 mr-3">
+          <Sun />
+        </div>
+        <div className="opacity-30 hover:opacity-60">
+          <Moon />
+        </div>
+      </div>
+    );
+  }
 
   const buttonClick = (): void => {
     setTheme(theme === Theme.LIGHT ? Theme.DARK : Theme.LIGHT);
