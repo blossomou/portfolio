@@ -5,7 +5,7 @@ import { MdDeveloperMode } from 'react-icons/md';
 import { RiComputerLine } from 'react-icons/ri';
 
 import { IProject, IService, ISkill } from './models/type';
-import { isGithubPages } from './constants';
+import { getAssetURL } from './utils/utils';
 
 export const services: IService[] = [
   {
@@ -105,7 +105,7 @@ export const projects: IProject[] = [
     id: 1,
     name: 'Weather Dashboard',
     description: 'A simple weather app that retrieves temperature from any city using OpenWeather API',
-    image_path: isGithubPages ? 'images/weatherdashboard.png' : '/images/weatherdashboard.png',
+    image_path: getAssetURL('/images/weatherdashboard.png'),
     deployed_url: 'https://blossomou.github.io/WeatherDashboard/',
     github_url: 'https://github.com/blossomou/WeatherDashboard',
     category: ['javascript'],
@@ -114,7 +114,7 @@ export const projects: IProject[] = [
   {
     id: 2,
     name: 'Tic-Tac-Toe',
-    image_path: isGithubPages ? 'images/tictactoe.png' : '/images/tictactoe.png',
+    image_path: getAssetURL('/images/tictactoe.png'),
     deployed_url: '',
     github_url: 'https://github.com/blossomou/TicTacToe',
     category: ['typescript', 'react', 'react native'],
@@ -125,7 +125,7 @@ export const projects: IProject[] = [
   {
     id: 3,
     name: 'FlappyBird Clone',
-    image_path: isGithubPages ? 'images/flappybird.png': '/images/flappybird.png',
+    image_path: getAssetURL('/images/flappybird.png'),
     deployed_url: '',
     github_url: 'https://github.com/blossomou/FlappyBirdClone',
     category: ['typescript', 'react', 'react native'],

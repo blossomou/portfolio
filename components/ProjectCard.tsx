@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import { motion } from 'framer-motion';
-import { FunctionComponent, useState } from 'react';
+import { FunctionComponent } from 'react';
 import { AiFillGithub, AiFillProject } from 'react-icons/ai';
 import { MdClose } from 'react-icons/md';
 
-import { fadeInUp, stagger } from '../animations';
+import { fadeInUp, stagger } from '../utils/animations';
 import { IProject } from '../models/type';
 
 const ProjectCard: FunctionComponent<{
@@ -12,7 +12,7 @@ const ProjectCard: FunctionComponent<{
   showDetail: null | number;
   setShowDetail: (id: null | number) => void;
 }> = ({
-  project: { name, image_path, category, deployed_url, description, github_url, key_techs, id },
+  project: { name, image_path, deployed_url, description, github_url, key_techs, id },
   showDetail,
   setShowDetail,
 }) => {

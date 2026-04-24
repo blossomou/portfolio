@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-import { fadeInUp, routeAnimation } from '../animations';
+import { fadeInUp, routeAnimation } from '../utils/animations';
 import Bar from '../components/Bar';
 import { languages, tools } from '../data';
 

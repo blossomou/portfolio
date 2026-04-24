@@ -1,5 +1,5 @@
 import { useTheme } from 'next-themes';
-import React, { FunctionComponent, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { Theme } from '../models/theme.enum';
 

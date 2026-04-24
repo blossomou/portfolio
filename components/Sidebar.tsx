@@ -1,21 +1,14 @@
-import { useTheme } from 'next-themes';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { GiTie } from 'react-icons/gi';
 import { GoLocation } from 'react-icons/go';
-import {isGithubPages} from '../constants'
 
 import ThemeToggle from './ThemeToggle';
+import { getAssetURL } from '../utils/utils';
 
 /* eslint-disable @next/next/no-img-element */
 const Sidebar = () => {
-  const { theme, setTheme } = useTheme();
-
-  const changeTheme = () => {
-    setTheme(theme === 'light' ? 'dark' : 'light');
-  };
-
-  const imgSrc = isGithubPages ? 'images/QingAndMomo.jpg' : '/images/QingAndMomo.jpg';
-  const pdfHref = isGithubPages ? 'assets/QingOuResume.pdf' : '/assets/QingOuResume.pdf';
+  const imgSrc = getAssetURL('images/QingAndMomo.jpg');
+  const pdfHref = getAssetURL('/assets/QingOuResume.pdf');
 
   return (
     <div>
